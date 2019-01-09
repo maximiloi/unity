@@ -5,36 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="preload" href="fonts/BodoniBold.woff2" as="font">
+  <link rel="preload" href="fonts/KontanterBold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoLight.woff2" as="font">
+
+  <link href="css/style.css" rel="stylesheet">
+
   <title>Делаем Вэб-сайты </title>
 </head>
 
 <body>
 
   <header class="page-header">
-    <nav class="page-nav">
-      <ul class="page-nav__list">
-        <li class="page-nav__item">О нас</li>
-        <li class="page-nav__item">Услуги</li>
-        <li class="page-nav__item">Преимущества</li>
-        <li class="page-nav__item">Заказать</li>
-      </ul>
-    </nav>
-    <div class="page-header__logo">
-      <span class="page-header__logo-white">A</span>
-      <span class="page-header__logo-blue">K</span>
+    <div class="page-header__wrapper-top">
+      <div class="hamburger hamburger--elastic">
+        <div class="hamburger-box">
+          <div class="hamburger-inner">
+            <nav class="page-nav">
+              <ul class="page-nav__list">
+                <li class="page-nav__item">О нас</li>
+                <li class="page-nav__item">Услуги</li>
+                <li class="page-nav__item">Преимущества</li>
+                <li class="page-nav__item">Заказать</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__logo">
+        <span class="page-header__logo-white">A</span>
+        <span class="page-header__logo-blue">K</span>
+      </div>
+      <div class="page-header__phone">8 800 555 53 53</div>
     </div>
-    <div class="page-header__phone">8 800 555 53 53</div>
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper-content">
       <h1 class="page-header__title">Делаем вебсайты</h1>
-      <p class="page-header__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea nam tempore modi! Eos,
-        quidem culpa.</p>
-      <button class="page-header__order">Заказать сайт</button>
+      <p class="page-header__text">Делаем быстро и качественно, ваш покупатель не пройдет мимо нами сделаного сайта.</p>
+      <div class="page-header__button button">
+        <p class="page-header__button-text">Заказать сайт</p>
+      </div>
     </div>
     <div class="page-header__social social">
       <ul class="social__list">
-        <li class="social__item">FB</li>
-        <li class="social__item">VK</li>
-        <li class="social__item">TW</li>
+        <li class="social__item">
+          <a href="#" aria-label="Мы в Фейсбуке">
+            FB
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" aria-label="Мы вконтакте">VK
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" aria-label="Мы в твитерре">TW
+          </a>
+        </li>
       </ul>
     </div>
   </header>

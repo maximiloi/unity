@@ -1,0 +1,87 @@
+.services {
+  margin: 0 auto;
+  width: 1200px;
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    color: @background-color-dark;
+    font-family: 'BodoniBold', sans-serif;
+    font-size: 52px;
+    line-height: 88px;
+    letter-spacing: 1px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    width: 285px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__content {
+    width: 844px;
+    &-img {
+      margin-bottom: 16px;
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-title {
+      width: 500px;
+      margin-bottom: 7px;
+      color: @background-color-dark;
+      font-family: 'BodoniBold', sans-serif;
+      font-size: 34px;
+      line-height: 88px;
+      letter-spacing: 1px;
+    }
+    &-text {
+      width: 500px;
+      color: @text-color-dark;
+      font-family: 'RobotoLight', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &-wrapper-right {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-number-projects {
+      margin-top: 33px;
+      margin-bottom: 80px;
+      text-align: right;
+      color: @background-color-dark;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &-order {
+      text-align: center;
+      color: @text-color-white;
+    }
+  }
+}
+
+.none {
+  display: none;
+}
+
+.active {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: @background-color-dark;
+  margin-left: 65px;
+}

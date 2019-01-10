@@ -20,13 +20,21 @@
     margin-bottom: 20px;
   }
   &__wrapper-list {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 280px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    list-style: none;
   }
   &__wrapper-item {
-    margin-right: 20px;
+    margin-bottom: 80px;
+    width: 60px;
+    height: 4px;
+    background-color: @text-color-gray;
+    &.active {
+      background-color: @background-color-dark;
+    }
   }
   &__wrapper-img {
     display: flex;

@@ -171,31 +171,25 @@
     <section class="connection">
       <div class="connection__wrapper">
         <h2 class="connection__title">У вас остались вопросы?</h2>
-        <p class="connection__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam eum
-          odio, cum quos quidem?</p>
-        <form class="connection__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="connection__form-wrapper">
-            <ul class="connection__form-list">
-              <li class="connection__form-item">
-                <input id="connection__form-name" type="text" name="connection__form-name" value="" placeholder="Ваше имя"
+        <p class="connection__text">Наш специалист ответит на любой Ваш вопрос, в течении часа.</p>
+        <form class="connection__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__wrapper">
+            <ul class="form__list">
+              <li class="form__item">
+                <input id="form__name" type="text" name="form__name" value="" placeholder="Введите имя ..." required>
+              </li>
+              <li class="form__item">
+                <input id="form__email" type="email" name="form__email" value="" placeholder="Введите email ..."
                   required>
               </li>
-              <li class="connection__form-item">
-                <input id="connection__form-email" type="email" name="connection__form-email" value="" placeholder="Email адрес"
-                  required>
-              </li>
-              <li class="connection__form-item">
-                <textarea class="connection__form-message" name="connection__form-message" placeholder="Ваш вопрос"
-                  required></textarea>
+              <li class="form__item">
+                <textarea class="form__message" name="form__message" placeholder="Ваш вопрос" required></textarea>
               </li>
             </ul>
-          </div>
-          <div class="connection__form-wrapper">
-            <button class="connection__form-button  button" type="submit">Отправить</button>
+            <input class="form__button button" type="submit" value="Отправить">
+            <p class="form__consent">Нажимая кнопку "Отправить" Вы соглашаетесь на обработку персональных данных.</p>
           </div>
         </form>
-        <p class="connection__consent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magnam eum
-          odio, cum quos quidem?</p>
       </div>
     </section>
 

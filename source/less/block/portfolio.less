@@ -1,0 +1,55 @@
+.portfolio {
+  margin: 0 auto;
+  margin-bottom: 110px;
+  width: 1200px;
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    color: @background-color-dark;
+    font-family: 'BodoniBold', sans-serif;
+    font-size: 52px;
+    line-height: 88px;
+    letter-spacing: 1px;
+  }
+  &__list {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  &__items {
+    margin-right: 110px;
+  }
+  &__active {
+    color: @background-color-dark;
+    border-bottom: 1px solid @background-color-dark;
+  }
+  &__contents {
+    display: flex;
+    height: 540px;
+    color: @text-color-white;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    &-title {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      line-height: 24px;
+      position: absolute;
+      left: -40px;
+      bottom: 70px;
+      transform: rotate(-90deg);
+    }
+    &-text {
+      margin: 25px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

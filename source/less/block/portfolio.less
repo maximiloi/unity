@@ -21,17 +21,20 @@
     font-size: 17px;
     line-height: 24px;
   }
-  &__items {
+  &__item {
     margin-right: 110px;
-  }
-  &__active {
-    color: @background-color-dark;
-    border-bottom: 1px solid @background-color-dark;
+    &.active {
+      color: @background-color-dark;
+      border-bottom: 1px solid @background-color-dark;
+    }
   }
   &__contents {
     display: flex;
     height: 540px;
     color: @text-color-white;
+    &.none {
+      display: none;
+    }
   }
   &__content {
     position: relative;

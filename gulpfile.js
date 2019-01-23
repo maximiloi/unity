@@ -55,7 +55,7 @@ gulp.task("js", function () {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("images", function () {
+gulp.task("img", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({

@@ -1,3 +1,47 @@
+@keyframes fadeOutLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-200%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 200%, 0);
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInUp1 {
+  animation-name: slideInUp;
+  animation-duration: 1.6s;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+}
+
+.slideInUp2 {
+  animation-name: slideInUp;
+  animation-duration: 1.4s;
+  animation-delay: 1.6s;
+  animation-fill-mode: both;
+}
+
 .page-header {
   margin-bottom: 80px;
   height: 883px;
@@ -57,7 +101,7 @@
     width: 310px;
     font-family: 'RobotoLight', sans-serif;
     font-size: 14px;
-    line-height: 20px; //letter-spacing: 1px;
+    line-height: 20px;
   }
   &__button {
     margin-left: 100px;
